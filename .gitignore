@@ -1,0 +1,4 @@
+# https://github.com/docker/docker/blob/master/.gitignore
+.*.swp # vi
+.DS_Store # MAC
+.vagrant* # vagrant
