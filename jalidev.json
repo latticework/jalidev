@@ -1,0 +1,52 @@
+{
+  "environments": [
+    {
+      "name": "global",
+      "hostConfiguration": {
+        "nodejs": {
+          "version": "6.1.0" 
+        },
+        "environmentProvider": {
+          "type": "Vagrant",
+          "version": "1.8.1"
+        },
+        "hypervisor": {
+          "type": "VirtualBox",
+          "version": "5.0.20"
+        },
+        "configurationManager": {
+          "type": "Chef",
+          "version": "12.9.41"
+        }
+      },
+      "clientConfiguration": {
+        "linuxDistribution": {
+          "requireGui": true,
+          "type": "Ubuntu",
+          "version": "14.04"
+        },
+        "fonts": [
+          "Hack"
+        ],
+        "nodejs": {
+          "version": "6.1.0" 
+        },
+        "editor": {
+          "type": "Code"
+        }
+      }
+    },
+    {
+      "name": "jalidev",
+      "clientConfiguration": {
+        "linuxDistribution": {
+          "type": "Ubuntu",
+          "version": "14.04"
+        },
+        "nodejs": {
+          "version": "6.1.0" 
+        }
+      }
+    }
+  ]
+}
