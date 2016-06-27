@@ -37,7 +37,7 @@ Install and configure Chef:
 [//]: # ( See http://stackoverflow.com/a/37661469/2240669 )
 1. Clone jalidev:
 
-   > `git clone --depth=1 --branch=master https://github.com/latticework/jalidev.git 
+   > `git clone --depth=1 --branch=master --origin jalidev  https://github.com/latticework/jalidev.git 
    > <your-project-name>`
 1. Navigate to the `<your-project-name>` directory
 
