@@ -3,11 +3,14 @@ Linux development environment for Jali projects.
 
 ## Prerequisites
 Install and configure Chef:
-1. Install __ChefDK__, [here](https://downloads.chef.io/chef-dk/).
-1. Install the __Chef Vagrant-Omnibus__ plugin
-> `vagrant plugin install vagrant-omnibus`
+
+1. Install __ChefDK__, [here](https://downloads.chef.io/chef-dk/)
+1. Install the __Chef Vagrant-Omnibus__ plugin
+
+   > `vagrant plugin install vagrant-omnibus`
 1. Install the __Vagrant-Berkshelf__ plugin
-> `vagrant plugin install vagrant-berkshelf`
+
+   > `vagrant plugin install vagrant-berkshelf`
 
 
 ### Note to NodeJS users
@@ -31,16 +34,23 @@ Install and configure Chef:
 > 2.  Add your user to `SeCreateSymbolicLinkPrivilege`
 
 ## Usage
+[//]: # ( See http://stackoverflow.com/a/37661469/2240669 )
 1. Clone jalidev:
-   > `git clone --origin jalidev https://github.com/latticework/jalidev.git 
+
+   > `git clone --depth=1 --branch=master https://github.com/latticework/jalidev.git 
    > <your-project-name>`
+1. Navigate to the `<your-project-name>` directory
+
+   > `cd <your-project-name>`
 1. Add new git origin. E.g.:
+
    > `git remote add origin https://github.com/<your-user-name>/<your-project-name>.git`
 1. Rename all references of `jalidev` to `your-project-name` in the 
    `Vagrantfile`. _Note that this will become the name of your virtual machine, 
    and you can only have one._
 1. Open a console window (perhaps as Administrator), cd to the project folder 
    and run Vagrant:
+
    > `vagrant up`
 1. Wait for Vagrant and Chef initializations to complete before using new the 
    virtual machine.
